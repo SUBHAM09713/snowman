@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #243047;
+    background-color: #f7fbff;
+}
+
+header {
+    background-color: white;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    color: #164b78;
+    font-size: 23px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #243047;
+    margin: 0 12px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #e34b59;
+}
+
+.cart {
+    text-decoration: none;
+    color: white;
+    background-color: #164b78;
+    padding: 10px 16px;
+    border-radius: 20px;
+}
+
+.hero {
+    min-height: 470px;
+    padding: 55px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background: linear-gradient(120deg, #e7f5ff, #fff1f1);
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.tag, .small-heading {
+    color: #e34b59;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    color: #164b78;
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.offer {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.offer strong {
+    color: #e34b59;
+    font-size: 34px;
+}
+
+.description {
+    color: #586579;
+    max-width: 420px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.shop-button {
+    display: inline-block;
+    background-color: #e34b59;
+    color: white;
+    text-decoration: none;
+    padding: 13px 27px;
+    border-radius: 5px;
+}
+
+.shop-button:hover {
+    background-color: #c93645;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(25, 57, 85, 0.15);
+}
+
+.products {
+    text-align: center;
+    padding: 65px 7%;
+}
+
+.products h2, .about h2 {
+    color: #164b78;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.product-card h3 {
+    margin: 14px 0 9px;
+}
+
+.product-card p {
+    margin-bottom: 12px;
+}
+
+.product-card strong {
+    color: #e34b59;
+    font-size: 18px;
+}
+
+.product-card span {
+    display: inline-block;
+    background-color: #e34b59;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.about {
+    text-align: center;
+    background-color: #e7f5ff;
+    padding: 50px 12%;
+}
+
+.about p {
+    color: #586579;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #164b78;
+    color: white;
+    padding: 30px 15px;
+    line-height: 1.8;
+}
+
+/* Make the website look good on mobile phones */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image img {
+        height: 240px;
+    }
+}
